@@ -39,7 +39,7 @@ function setup(){
 }
 
 function draw(){
-  background("lightblue");
+  background("yellow");
   
   if (gameState === PLAY){
     fruits();
@@ -51,7 +51,7 @@ function draw(){
     if (fruitGroup.isTouching(sword)){
       fruitGroup.destroyEach();
       knifeSound.play();
-      score = score + 2
+      score = score + 4
       
     }
     else
